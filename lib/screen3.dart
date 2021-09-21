@@ -13,9 +13,10 @@ class Screen3 extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             //code kita
-          }, 
+            Navigator.pop(context);
+          },
           child: Text('Screen 3 goto Screen 2'),
-          ),
+        ),
       ),
     );
   }

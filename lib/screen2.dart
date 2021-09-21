@@ -1,3 +1,4 @@
+import 'package:buttonsdemo/screen3.dart';
 import 'package:flutter/material.dart';
 
 class Screen2 extends StatelessWidget {
@@ -12,7 +13,7 @@ class Screen2 extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            //code kita
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Screen3() ) );
           }, 
           child: Text('Screen 2 goto Screen 3'),
           ),
