@@ -1,10 +1,11 @@
 import 'package:buttonsdemo/screen3.dart';
+import 'package:buttonsdemo/student.dart';
 import 'package:flutter/material.dart';
 
 class Screen2 extends StatelessWidget {
   Screen2({Key? key, required this.passObj}) : super(key: key);
 
-  String passObj;
+  Student passObj;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,14 @@ class Screen2 extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(30.0),
               child: Text(
-                passObj,
+                passObj.nama,
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Text(
+                passObj.email,
                 style: TextStyle(fontSize: 20),
               ),
             ),
